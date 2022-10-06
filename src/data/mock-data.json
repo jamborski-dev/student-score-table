@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "Pheobe",
+    "score": 90,
+    "class": "C"
+  },
+  {
+    "id": 1,
+    "name": "Ross",
+    "score": 100,
+    "class": "C"
+  },
+  {
+    "id": 2,
+    "name": "Monica",
+    "score": 100,
+    "class": "B"
+  },
+  {
+    "id": 3,
+    "name": "Joey",
+    "score": 30,
+    "class": "C"
+  },
+  {
+    "id": 4,
+    "name": "Chandler",
+    "score": 83,
+    "class": "B"
+  },
+  {
+    "id": 5,
+    "name": "Rachel",
+    "score": 58,
+    "class": "B"
+  }
+]
