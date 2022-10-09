@@ -1,8 +1,11 @@
-:root {
-  --theme-bg: #fff;
-  --theme-font: #222;
-}
+@use "./core/root.scss";
+@use "./core/typography.scss";
+@use "./components/Button";
+@use "./components/Table";
+@use "./components/Form.scss";
+@use "./components/Tooltip.scss";
 
+// TODO: add theme switcher
 .theme--dark {
   --theme-bg: #333;
   --theme-font: #fff;
@@ -10,16 +13,20 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   color: var(--theme-font);
   background-color: var(--theme-bg);
   min-height: 100vh;
+
+  padding: 4%;
 }
 
 main {
   height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }

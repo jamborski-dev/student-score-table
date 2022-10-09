@@ -1,4 +1,4 @@
-import "./style.global.scss"
+import "./style/global.scss"
 
 import { Form } from "./components/Form/Form"
 import { Filter } from "./components/Filter/Filter"

@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --theme-bg: #fff;
+  --theme-font: #222;
+  --color-action: rgb(26, 126, 241);
+  --color-warning: rgb(163, 37, 37);
+}

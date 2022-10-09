@@ -1,0 +1,53 @@
+.btn {
+  --color: var(--color-action);
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  color: white;
+  background-color: var(--color);
+  border: 2px solid var(--color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  transition: {
+    property: color, background-color, border-color;
+    duration: 0.1s;
+  }
+
+  &:not(:disabled):hover {
+    background-color: transparent;
+    border-color: var(--color);
+    color: var(--color);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &.-warning {
+    --color: var(--color-warning);
+  }
+
+  &.-secondary {
+    --color: rgb(112, 112, 112);
+  }
+
+  &-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  &.-inline {
+    width: unset;
+  }
+
+  // force some of the react icons to use color value as its primary colour
+  .force-stroke path {
+    stroke: inherit;
+  }
+}

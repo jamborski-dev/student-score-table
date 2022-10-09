@@ -1,6 +1,39 @@
-# Getting Started with Create React App
+# Student Score Table - mini front end app excercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech-stack
+
+- Create React App
+- TypeScript
+- SCSS
+- Framer Motion
+
+### Plan of works
+
+- [x] Form, Table and Filter components
+- [x] use Context for table data state managment
+- [x] filter table by available fields
+- [x] sort table by column
+- [x] add new records
+- [x] style default theme
+- [ ] edit current record
+- [ ] i18z with `React-Intl` (EN, PL)
+- [ ] mobile media queries
+- [ ] animations using `framer-motion`
+- [ ] unit tests
+- [ ] integration tests
+- [ ] E2£ tests
+
+### Improvements
+
+- [ ] dark theme switcher
+- [ ] mock API to introduce async data fetching simulation
+- [ ] use `Yup` for data validation
+- [ ] swap Context API to micro state manager
+- [ ] swap Formik to React Hook Form - should mitigate too many re-renders
+
+## Known bugs
+
+- [ ] current implementation of **sort table by column** introduced stale state when controlling state with the component level `useState` + `useEffect` hooks. This results in render being behind actual state value. Logging values in the console proves values being correctly sorted.
 
 ## Available Scripts
 
