@@ -21,6 +21,7 @@ export const Table = () => {
 
   useEffect(() => {
     setDataSorted(dataFiltered)
+    // eslint-disable-next-line
   }, [dataFiltered.length])
 
   /* useEffect(() => {
