@@ -96,7 +96,7 @@ export const Filter = () => {
                   Score Min
                 </label>
                 <Field
-                  className="form-input"
+                  className="form-input -score"
                   type="number"
                   name="scoreMin"
                   placeholder="0"
@@ -110,7 +110,7 @@ export const Filter = () => {
                   Score Max
                 </label>
                 <Field
-                  className="form-input"
+                  className="form-input -score"
                   type="number"
                   name="scoreMax"
                   placeholder="0"
@@ -135,20 +135,20 @@ export const Filter = () => {
               </Field>
             </div>
             <div className="btn-group -merged">
-              <button className="btn" type="submit">
+              <button className="btn show-tooltip" type="submit" data-tooltip="Apply Filter">
                 <TbFilter />
-                &nbsp;Filter
+                {/* &nbsp;Filter */}
               </button>
 
               {/* TODO: animate clear button when NOT disabled - slide from underneath 'Filter' button */}
               <button
-                className="btn -secondary"
+                className="btn -secondary show-tooltip"
+                data-tooltip="Clear All Filters"
                 type="button"
                 onClick={() => handleClearFilter(props.resetForm)}
                 disabled={!isFilter}
               >
                 <TbFilterOff />
-                &nbsp;Clear
               </button>
             </div>
           </fieldset>

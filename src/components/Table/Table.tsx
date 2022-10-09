@@ -147,11 +147,13 @@ export const Table = () => {
     })
 
   return (
-    <table className="table">
-      <thead className="table__head">
-        <tr>{renderLabels()}</tr>
-      </thead>
-      <tbody className="table__body">{renderRows()}</tbody>
-    </table>
+    <div className="table__outer">
+      <table className="table">
+        <thead className="table__head">
+          <tr>{renderLabels()}</tr>
+        </thead>
+        <tbody className="table__body">{renderRows()}</tbody>
+      </table>
+    </div>
   )
 }

@@ -1,5 +1,7 @@
 # Student Score Table - mini front end app excercise
 
+**Demo**: deployed using Netlify [here](https://tubular-pony-0a0cf2.netlify.app/).
+
 ## Tech-stack
 
 - Create React App
@@ -15,9 +17,9 @@
 - [x] sort table by column
 - [x] add new records
 - [x] style default theme
+- [x] mobile media queries
 - [ ] edit current record
 - [ ] i18z with `React-Intl` (EN, PL)
-- [ ] mobile media queries
 - [ ] animations using `framer-motion`
 - [ ] unit tests
 - [ ] integration tests
@@ -25,12 +27,15 @@
 
 ### Planned improvements
 
+- [ ] hide filter form in animated drawer
 - [ ] add new record to top of the table **OR** use smooth `scrollIntoView()` once record added to bottom of the list
 - [ ] dark theme switcher
+- [ ] highlight used filter fields if filter is active
 - [ ] mock API to introduce async data fetching simulation
 - [ ] use `Yup` for data validation
 - [ ] swap Context API to micro state manager
 - [ ] swap Formik to React Hook Form - should mitigate too many re-renders
+- [ ] use `Select2` library for accessible custom select inputs
 
 ## Known bugs
 

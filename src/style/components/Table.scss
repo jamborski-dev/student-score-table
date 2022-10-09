@@ -2,8 +2,14 @@
   width: 100%;
   overflow-x: scroll;
   border-collapse: collapse;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  margin-bottom: 2rem;
+
+  &__outer {
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+  }
 
   thead {
     background-color: #3c3c3c;
@@ -37,6 +43,7 @@
     gap: 0.5rem;
     user-select: none;
     cursor: pointer;
+    white-space: nowrap;
 
     &:hover .icon,
     &.-active .icon {
