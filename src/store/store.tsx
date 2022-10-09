@@ -24,17 +24,20 @@ export const StoreProvider = ({ children }: TContextProps) => {
   const [isEdit, setEdit] = useState<boolean>(false)
 
   // could possilby be kept in a constant.. leave as state if want to add extra classes via UI
-  const [classes, setClasses] = useState<string[]>(["A", "B", "C", "D"])
+  const [classes] = useState<string[]>(["A", "B", "C", "D"])
 
   useEffect(() => {
     setData(JSONData)
-    setDataFiltered(data)
   }, [])
+
+  useEffect(() => {
+    setDataFiltered(data)
+  }, [data])
 
   useEffect(() => {
     if (!data) return
     setDataFiltered(data.sort((a, b) => a.name.localeCompare(b.name)))
-  }, [data])
+  }, [data, dataFiltered])
 
   const addRecord = (record: TStudentScore) => setData(prev => [...prev, record])
   const removeRecord = (_id: number) => setData(prev => prev.filter(item => item.id !== _id))

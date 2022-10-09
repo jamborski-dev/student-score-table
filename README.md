@@ -23,8 +23,9 @@
 - [ ] integration tests
 - [ ] E2£ tests
 
-### Improvements
+### Planned improvements
 
+- [ ] add new record to top of the table **OR** use smooth `scrollIntoView()` once record added to bottom of the list
 - [ ] dark theme switcher
 - [ ] mock API to introduce async data fetching simulation
 - [ ] use `Yup` for data validation
@@ -34,6 +35,7 @@
 ## Known bugs
 
 - [ ] current implementation of **sort table by column** introduced stale state when controlling state with the component level `useState` + `useEffect` hooks. This results in render being behind actual state value. Logging values in the console proves values being correctly sorted.
+- [ ] column with `filter: false` still has onClick set
 
 ## Available Scripts
 
